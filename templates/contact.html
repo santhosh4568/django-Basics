@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<h1>Contact Page</h1>
+<div>
+<p> <strong> {{name|upper}}</strong></p>
+<p>{{Contact}}</p>
+<p> psanthosh152001@gmail.com</p>
+<ul>
+{% for item in list %}
+   {% if item == 123 %}
+        <li>{{item|add:123}}
+    {% else %}
+        <li>{{item}}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+{% endblock %}
